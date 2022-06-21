@@ -12,7 +12,7 @@ class Solution:
             nums1, nums2 = nums2, nums1
         total_length = len(nums1) + len(nums2)
         half_lenth = total_length // 2
-        left_pointer, right_pointer = 0, len(nums1)
+        left_pointer, right_pointer = 0, len(nums1) - 1
         while True:
             first_cut = (left_pointer + right_pointer) // 2
             second_cut = half_lenth - first_cut
@@ -35,5 +35,5 @@ class Solution:
             if total_length % 2 == 1:
                 return min(first_upper_median, second_upper_median)
             else:
-                return (max(first_lower_median, second_lower_median) +
-                        min(first_upper_median, second_upper_median)) / 2
+                return ((max(first_lower_median, second_lower_median)
+                        + min(first_upper_median, second_upper_median)) / 2)
