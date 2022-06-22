@@ -1,3 +1,6 @@
+# https://codeforces.com/problemset/problem/71/A
+
+
 C = int(input())
 
 while C:
