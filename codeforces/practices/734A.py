@@ -1,12 +1,11 @@
 # https://codeforces.com/problemset/problem/734/A
 
 
-l = int(input())
-
+length = int(input())
 s = input()
 
 a = s.count('A')
-d = l - a
+d = length - a
 
 if a == d:
     print('Friendship')
